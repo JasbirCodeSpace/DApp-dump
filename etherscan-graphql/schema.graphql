@@ -1,0 +1,15 @@
+type Query {
+  getEthByAddress: ETH_BALANCE_RESULT!
+  getTotalSupplyEth: ETH_SUPPLY_RESULT!
+}
+
+type ETH_BALANCE_RESULT {
+  status: String!
+  result: String!
+}
+
+type ETH_SUPPLY_RESULT {
+  status: String!
+  message: String!
+  result: String!
+}
